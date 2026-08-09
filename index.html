@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#23262A" />
+
+    <title>АБК Тас — щебень М1200 в 20 минутах от Астаны</title>
+    <meta
+      name="description"
+      content="Щебёночный карьер «АБК Тас», с. Кызылсуат. Щебень 5–20 М1200 от 5 000 ₸/т при самовывозе, отсев 0–5, горная масса 0–300. До 110 000 тонн в месяц. 20 минут от Астаны."
+    />
+
+    <meta property="og:title" content="АБК Тас — щебень М1200 в 20 минутах от Астаны" />
+    <meta
+      property="og:description"
+      content="Щебень 5–20 от 5 000 ₸/т самовывозом. До 110 000 т/мес. Самовывоз и доставка."
+    />
+    <meta property="og:image" content="https://abktas.vercel.app/assets/hero.jpg" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="АБК Тас" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="kk_KZ" />
+    <meta property="og:url" content="https://abktas.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="canonical" href="https://abktas.vercel.app/" />
+    <link rel="alternate" hreflang="ru" href="https://abktas.vercel.app/" />
+    <link rel="alternate" hreflang="kk" href="https://abktas.vercel.app/?lang=kk" />
+    <link rel="alternate" hreflang="x-default" href="https://abktas.vercel.app/" />
+
+    <!-- Фавиконка — тот же знак, что и в шапке: Λ-буква А с оранжевой
+         перекладиной на графите. Инлайном, без отдельного файла. -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M0 12A12 12 0 0 1 12 0h40a12 12 0 0 1 12 12v34L46 64H12A12 12 0 0 1 0 52Z' fill='%2323262A'/%3E%3Cpath d='M32 8 58 54H44.6L32 31.6 19.4 54H6Z' fill='%23fff'/%3E%3Cpath d='M23.4 43h17.2v6.4H23.4Z' fill='%23E8730C'/%3E%3C/svg%3E" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2323262A'/%3E%3Cpath d='M32 8 58 54H44.6L32 31.6 19.4 54H6Z' fill='%23fff'/%3E%3Cpath d='M23.4 43h17.2v6.4H23.4Z' fill='%23E8730C'/%3E%3C/svg%3E" />
+
+    <!-- Jost — подмена URW Gothic Demi для заголовков; Lato — текст.
+
+         ВАЖНО про кириллицу. В сборке Lato на Google Fonts кириллицы нет:
+         запрос subset=cyrillic отдаёт тот же файл, что и subset=latin
+         (у Jost, для сравнения, файлы разные). То есть весь русский текст
+         на Lato молча уезжает в Arial. Поэтому в стек добавлен PT Sans —
+         гуманистический гротеск, нарисованный под кириллицу; он подхватывает
+         только кириллические знаки, латиница и цифры остаются на Lato.
+         Правильное решение на будущее — положить рядом Lato 2.0 от автора
+         (лицензия OFL, кириллица там есть) и раздавать со своего хостинга.
+
+         Golos Text — для казахской версии. В Jost казахских букв нет вообще,
+         в PT Sans есть только часть; Golos Text покрывает их целиком. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Lato:wght@400;700&family=PT+Sans:wght@400;700&family=Golos+Text:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preload" as="image" href="video/hero-poster.jpg" fetchpriority="high" />
+
+    <style>
+      html { background: #23262A; }
+      body { margin: 0; }
+      /* Читаемое содержание для страницы без JavaScript.
+
+         Скрыт по умолчанию и показывается только через <noscript> ниже.
+         Раньше правило было обратным — блок прятался, «как только React
+         смонтировался», — и на секунду успевал мелькнуть на глазах
+         у всех, у кого JavaScript включён. */
+      .nojs { display: none;
+        font: 400 17px/1.6 Lato, 'PT Sans', Arial, sans-serif;
+        color: #fff; background: #23262A;
+        padding: 40px 20px 64px; }
+      .nojs__in { max-width: 1180px; margin: 0 auto; }
+      .nojs h1, .nojs h2 {
+        font-family: Jost, Lato, 'PT Sans', Arial, sans-serif;
+        font-weight: 600; letter-spacing: -.025em; color: #fff;
+      }
+      .nojs h1 { font-size: 34px; line-height: 1.08; margin: 0 0 14px; }
+      .nojs h2 { font-size: 20px; margin: 34px 0 10px; }
+      .nojs a { color: #E8730C; }
+      .nojs ul { margin: 0; padding-left: 20px; }
+      .nojs li { margin-bottom: 6px; }
+      .nojs .rule { width: 42px; height: 3px; background: #E8730C; margin: 10px 0 22px; }
+      .nojs .lock {
+        font-family: Jost, Lato, 'PT Sans', Arial, sans-serif; font-weight: 600;
+        font-size: 22px; letter-spacing: .14em;
+      }
+    </style>
+
+    <noscript>
+      <style>
+        .nojs {
+          display: block;
+        }
+      </style>
+    </noscript>
+
+    <!-- Карточка организации для поиска и карт.
+         Плейсхолдеры в фигурных скобках заменить перед публикацией. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://abktas.vercel.app/#org",
+        "name": "АБК Тас — щебёночный карьер",
+        "description": "Щебёночный карьер в 20 минутах от Астаны. Щебень кубовидный 5–20 мм марки М1200, отсев дробления 0–5 мм, горная масса 0–300 мм. До 110 000 тонн отгрузки в месяц.",
+        "url": "https://abktas.vercel.app/",
+        "telephone": ["+77017000660", "+77011115822"],
+        "image": "https://abktas.vercel.app/assets/hero.jpg",
+        "priceRange": "от 5000 ₸/т",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "KZ",
+          "addressRegion": "Акмолинская область",
+          "addressLocality": "с. Кызылсуат"
+        },
+        "hasMap": "https://go.2gis.com/liO7f",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "08:00",
+            "closes": "20:00"
+          }
+        ],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Product", "name": "Щебень кубовидный 5–20 мм, М1200" },
+            "price": "5000",
+            "priceCurrency": "KZT",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Product", "name": "Горная масса 0–300 мм" },
+            "priceCurrency": "KZT",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Product", "name": "Отсев дробления 0–5 мм" },
+            "priceCurrency": "KZT",
+            "availability": "https://schema.org/InStock"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Вопросы и ответы для поиска. Тексты совпадают с блоком FAQ на странице. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Работаете с НДС?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, работаем с НДС — указанная цена его уже включает. Счёт-фактуру выставляем на каждую поставку."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Даёте отсрочку платежа?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Условия оплаты фиксируются в договоре поставки. Обсуждаются под объём и график отгрузки."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Есть паспорт качества?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, паспорт качества выдаём на каждую партию. Марка прочности камня — М1200. Комплект документов: договор поставки, счёт-фактура, паспорт качества."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Какая минимальная партия?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "От 1 самосвала — 20 тонн. Весовая на карьере, отгрузка по талону."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Как считается доставка?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "По плечу до объекта. Цена в прайсе указана при самовывозе, доставку считаем отдельно — самосвалами по Астане и области. Прикинуть бюджет можно в калькуляторе, итоговую стоимость подтверждает менеджер."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Можно забрать самовывозом?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, это базовый вариант — цены в прайсе указаны именно при самовывозе с карьера. Заезд по звонку, погрузка фронтальным погрузчиком."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Когда работаете?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ежедневно с 08:00 до 20:00, без выходных."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Какие документы даёте?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Договор поставки, счёт-фактура и паспорт качества на партию."
+            }
+          }
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-CSApa4Uc.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CLUZZGQM.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- Содержание для страницы с выключенным JS и для поисковых роботов,
+         которые не исполняют скрипты. Скрывается, как только React смонтирован. -->
+    <div class="nojs">
+      <div class="nojs__in">
+        <div class="lock">АБК ТАС</div>
+        <div class="rule"></div>
+
+        <h1>Щебень М1200 в 20 минутах от Астаны</h1>
+        <p>
+          Действующий карьер с прямым выездом на трассу. Короткое плечо — больше рейсов
+          самосвала за смену и ниже цена тонны на вашем объекте.
+        </p>
+        <p>
+          <strong>Телефон и WhatsApp:</strong>
+          <a href="tel:+77017000660">+7 701 700 0660</a>,
+          <a href="tel:+77011115822">+7 701 111 5822</a>
+        </p>
+
+        <h2>Продукция и цены при самовывозе</h2>
+        <ul>
+          <li>Щебень кубовидный 5–20 мм — 5 000 ₸/т. Товарный бетон, ЖБИ, асфальтобетон. 30 000 т/мес.</li>
+          <li>Горная масса 0–300 мм — цена под объём. Основание дорог, подсыпка, планировка. 30 000 – 50 000 т/мес.</li>
+          <li>Отсев дробления 0–5 мм — цена под объём. ЖБИ, растворы, благоустройство. 30 000 т/мес.</li>
+        </ul>
+        <p>Цена с НДС</p>
+
+        <h2>Условия отгрузки</h2>
+        <ul>
+          <li>Ежедневно 08:00–20:00, без выходных</li>
+          <li>Минимальная партия — от 1 самосвала (20 тонн)</li>
+          <li>Весовая на карьере, отгрузка по талону</li>
+          <li>Погрузка фронтальным погрузчиком, заезд по звонку</li>
+          <li>Доставка самосвалами по Астане и области, считается по плечу</li>
+          <li>Договор поставки, счёт-фактура, паспорт качества на партию</li>
+        </ul>
+
+        <h2>Локация</h2>
+        <p>
+          с. Кызылсуат, Акмолинская область ·
+          <a href="https://go.2gis.com/liO7f" rel="noopener">открыть в 2ГИС</a>
+        </p>
+
+        <p style="margin-top: 34px; color: rgba(255, 255, 255, 0.5); font-size: 13px">
+          Щебень кубовидный 5–20 мм · отсев 0–5 мм · горная масса 0–300 мм. Марка прочности
+          М1200. Цены указаны при самовывозе и не являются публичной офертой; актуальную цену
+          на ваш объём подтверждает менеджер.
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
